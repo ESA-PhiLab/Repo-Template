@@ -68,6 +68,17 @@ body {
     opacity: 0;
 }
 
+/* Flex properties removed from this shared rule */
+
+.publication-links {
+    /* Flex properties are now specific to the links container */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Center the buttons */
+    gap: 0.5rem; /* Add some space between buttons */
+    /* The animation and opacity are inherited from the rule above or can be re-declared if needed */
+}
+
 /* Main content sections styling */
 section.section {
     background-color: #ffffff;
@@ -115,6 +126,7 @@ section.section .title .icon { /* Ensure icon color matches title if icons are u
     border-color: #005288;
     color: #005288;
     transition: all 0.3s ease;
+    margin-bottom: 0.5rem; /* Ensure buttons have a little space below them if they wrap */
 }
 .publication-links .link-block a.button.is-outlined:hover {
     background-color: #005288;
