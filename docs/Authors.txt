@@ -1,2 +1,4 @@
 Author One, Author Two, Author Three
-(1) Affiliation One, (2) Affiliation Two, (3) Affiliation Three
+(1) Affiliation One, 
+(2) Affiliation Two, 
+(3) Affiliation Three
