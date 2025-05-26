@@ -1,3 +1,20 @@
+![GitHub stars](https://img.shields.io/github/stars/ESA-PhiLab/Repo-Template.svg)
+![GitHub forks](https://img.shields.io/github/forks/ESA-PhiLab/Repo-Template.svg)
+![GitHub issues](https://img.shields.io/github/issues/ESA-PhiLab/Repo-Template.svg)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/ESA-PhiLab/Repo-Template.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/ESA-PhiLab/Repo-Template.svg)
+![GitHub code size](https://img.shields.io/github/languages/code-size/ESA-PhiLab/Repo-Template.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/ESA-PhiLab/Repo-Template.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/ESA-PhiLab/Repo-Template.svg)
+![GitHub contributors](https://img.shields.io/github/contributors/ESA-PhiLab/Repo-Template.svg)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Documentation Status](https://img.shields.io/badge/docs-latest-green.svg)](https://github.com/ESA-PhiLab/Repo-Template/wiki)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15332053.svg)](https://doi.org/10.5281/zenodo.15332053)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+(For these shield to work, set proper name..)
+
 # ESA-PhiLab GitHub Repository Template
 
 Welcome to the official ESA-PhiLab repository. This template ensures that all projects conform to ESA-PhiLab's guidelines for reproducibility, licensing, and collaboration.
@@ -56,8 +73,19 @@ Please cite the following works if you use this code:
 ├── scripts/            # utility scripts and entry points
 ├── tests/              # unit and integration tests
 ├── docs/               # documentation (Sphinx, MkDocs, GitHub Pages)
+│   ├── index.html      # main documentation page
+│   ├── images/         # documentation assets (images,..)
 └── examples/           # usage examples and demos
 ```
+
+The `docs/` directory contains the project's documentation website with comprehensive information about the project, including:
+- Project overview and goals
+- Installation and setup instructions
+- Usage examples and tutorials
+- API documentation
+- Links to related resources and publications
+- Team and contributor information
+
 
 ## 📄 License
 This project is licensed under the **CC BY-NC-ND 4.0** license. See the [LICENSE](./LICENSE) file or read more at [creativecommons.org](https://creativecommons.org/licenses/by-nc-nd/4.0/).
@@ -68,6 +96,28 @@ Datasets are either included in `data/` or hosted externally:
 - [Hugging Face Datasets](https://huggingface.co/datasets)
 
 Ensure external links are functional and persistent.
+
+### 📥 Data Download Utilities
+
+This repository includes a utility script for downloading datasets or models from the Hugging Face Hub:
+
+```python
+# Install required dependencies
+pip install huggingface_hub
+
+# Run the download script
+python data/download_hf_datasets.py
+```
+
+The script (`data/download_hf_datasets.py`) provides a robust way to fetch datasets with automatic retries and error handling. It uses the `huggingface_hub` library to download repositories with the following features:
+
+- Downloads datasets or models from Hugging Face Hub
+- Configurable retry mechanism for handling network issues
+- Progress tracking and error reporting
+- Supports custom local directories for downloads
+- Uses HF's optimized transfer protocol
+
+To customize which datasets to download, edit the `repo_ids` list in the script.
 
 ## 🌐 GitHub Pages
 This repository supports GitHub Pages. Request support to enable and configure the page if needed.
