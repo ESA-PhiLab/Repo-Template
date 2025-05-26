@@ -1,0 +1,6 @@
+[
+  { "name": "Paper PDF", "url": "#paper-link", "icon": "fas fa-file-pdf" },
+  { "name": "Source Code", "url": "#code-link", "icon": "fab fa-github" },
+  { "name": "Dataset", "url": "#dataset-link", "icon": "fas fa-database" },
+  { "name": "Presentation Video", "url": "#video-link", "icon": "fab fa-youtube" }
+]
