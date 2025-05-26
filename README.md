@@ -15,9 +15,15 @@
 
 (For these shield to work, set proper name..)
 
-<p align="right">
-  <img src="./docs/images/logo.png" alt="ESA-PhiLab Logo" width="300"/>
-</p>
+
+
+<div style="background-color: #002147; width: 100%; padding: 20px; margin-bottom: 20px; color: white; text-align: center;">
+    <p align="right">
+    <img src="./docs/images/logo.png" alt="ESA-PhiLab Logo" width="150" style='margin-bottom: -3.8em;'/>
+    </p>
+  <h2 align='left' style='margin-left: 1em;'>European Space Agency PhiLab</h2>
+  <p>Advancing Earth Observation through innovation and research</p>
+</div>
 
 
 # ESA-PhiLab GitHub Repository Template
