@@ -15,9 +15,9 @@
 
 (For these shield to work, set proper name..)
 
-<div align="right" style='margin-bottom: 2em; background-color: #00254b; padding: 10px; display: inline-block; float: right; border-radius: 5px;'>
-  <img src="./docs/images/logo.png" alt="ESA-PhiLab Logo">
-</div>
+<p align="right">
+  <img src="./docs/images/logo.png" alt="ESA-PhiLab Logo" width="300"/>
+</p>
 
 
 # ESA-PhiLab GitHub Repository Template
