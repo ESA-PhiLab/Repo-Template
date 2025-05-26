@@ -16,18 +16,14 @@
 (For these shield to work, set proper name..)
 
 
-
-<div style="background-color: #002147; width: 100%; padding: 20px; margin-bottom: 20px; color: white; text-align: center;">
-    <p align="right">
-    <img src="./docs/images/logo.png" alt="ESA-PhiLab Logo" width="150" style='margin-bottom: -3.8em;'/>
-    </p>
-  <h2 align='left' style='margin-left: 1em;'>European Space Agency PhiLab</h2>
-  <p>Advancing Earth Observation through innovation and research</p>
-</div>
+<p align="right">
+<img src="./docs/images/banner.png" alt="ESA-PhiLab Logo" width="950" style='margin-bottom: 0em;'/>
+</p>
 
 
-# ESA-PhiLab GitHub Repository Template
 
+
+## Repository Template
 
 
 Use this template to kickstart your ESA-PhiLab project with all the necessary structure and documentation. You'll get:
