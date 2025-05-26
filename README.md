@@ -15,9 +15,16 @@
 
 (For these shield to work, set proper name..)
 
+<div align="right" style='margin-bottom: 2em;'>
+  <img src="/Users/roberto.delprete/Library/CloudStorage/OneDrive-ESA/Desktop/Repos/CodeDefinitionPhilab/docs/images/logo.png" alt="ESA-PhiLab Logo">
+</div>
+
+
 # ESA-PhiLab GitHub Repository Template
 
 Welcome to the official ESA-PhiLab repository. This template ensures that all projects conform to ESA-PhiLab's guidelines for reproducibility, licensing, and collaboration.
+
+Use this template for creating your repository and the webpage containing important links.
 
 ## 📌 Project Title
 > Replace this with your project name.
