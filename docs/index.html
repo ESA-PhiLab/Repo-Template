@@ -21,13 +21,37 @@
                 const authorsResponse = await fetch('Authors.txt');
                 const authorsText = await authorsResponse.text();
                 const [authorsLine, affiliationsLine] = authorsText.split('\n');
-                const authorsArray = authorsLine.split(',').map(author => author.trim());
+
+                // Split by semicolon and handle name-affiliation combinations
+                const authorsArray = [];
+                const authorAffiliations = [];
                 
-                // Add superscript affiliation numbers and proper spacing between authors
-                const authorsHtml = authorsArray.map((author, index) => 
-                  `<span class="author-block">${author}<sup>(${index + 1})</sup></span>`
-                ).join(' ');
+                // Parse authors with their affiliations
+                authorsLine.split(';').forEach(authorEntry => {
+                  // Extract the author name and affiliations using regex that handles multiple affiliations
+                  const authorParts = authorEntry.trim().match(/(.*?)\(([0-9,\s]+)\)/);
+                  if (authorParts) {
+                  const authorName = authorParts[1].trim();
+                  // Split by comma and trim each affiliation number
+                  const affiliationNumbers = authorParts[2].split(',').map(num => num.trim());
+                  
+                  authorsArray.push(authorName);
+                  authorAffiliations.push(affiliationNumbers);
+                  }
+                });
+                
+                // Generate HTML with proper superscript affiliations
+                const authorsHtml = authorsArray.map((author, index) => {
+                  return `<span class="author-block">${author}<sup>${authorAffiliations[index].join(',')}</sup></span>`;
+                }).join('; ');
+                
                 document.getElementById('publication-authors').innerHTML = authorsHtml;
+
+                // Extract all affiliations for each author
+                const affiliationsList = authorsLine.split(',').map(author => {
+                  const matches = author.match(/\((\d+)\)/g) || [];
+                  return matches.map(m => m.replace(/[()]/g, ''));
+                });
                 document.getElementById('author-affiliations').innerText = affiliationsLine;
 
                 const abstractResponse = await fetch('Abstract.txt');
