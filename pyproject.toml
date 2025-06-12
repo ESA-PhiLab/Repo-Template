@@ -19,18 +19,27 @@ classifiers = [
 ]
 dependencies = [
     # Add your project dependencies here, e.g.:
-    # "numpy>=1.20",
-    # "pandas",
+    "pandas>=1.5.0",
+    "numpy>=1.20.0",
+    # "other_package>=version",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=7.0",
-    "pytest-cov",
+    "pytest-cov>=4.0",
+    "flake8>=6.0",
+    "black>=23.0",
+    "isort>=5.0",
+    "mypy>=1.0",
 ]
 test = [
     "pytest>=7.0",
-    "pytest-cov",
+    "pytest-cov>=4.0",
+]
+docs = [
+    "sphinx>=5.0",
+    "sphinx-rtd-theme>=1.0",
 ]
 
 [project.urls]

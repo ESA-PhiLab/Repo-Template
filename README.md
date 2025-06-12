@@ -54,12 +54,34 @@ Provide a concise summary of the project goals, methodology, and outcomes.
 ## 🛠️ How to Use
 Detailed instructions to set up and run the project.
 
+### Quick Start
+
+**1. Setup the development environment:**
+```bash
+./scripts/setup.sh
+```
+
+**2. Activate the virtual environment:**
+```bash
+source venv/bin/activate
+```
+
+**3. Download datasets:**
+```bash
+./scripts/download_data.sh
+```
+
+**4. Run tests and build:**
+```bash
+./scripts/build.sh
+```
+
 ### Requirements
 This repository uses a modern Python environment standard:
 - Python ≥ 3.9
 - Dependencies are specified in the `pyproject.toml` file.
 
-To install:
+**Manual installation:**
 ```bash
 pip install .
 ```
@@ -67,6 +89,19 @@ Or using PDM:
 ```bash
 pdm install
 ```
+
+### Available Scripts
+
+**Bash Scripts (in `scripts/`):**
+- `setup.sh` - Sets up the development environment
+- `build.sh` - Builds, tests, and packages the project
+- `download_data.sh` - Downloads and processes datasets
+- `cleanup.sh` - Removes build artifacts and cache files
+
+**Python Scripts (in `pyscripts/`):**
+- `download_hf_datasets.py` - Downloads from Hugging Face Hub
+- `process_data.py` - Data processing and analysis utilities
+- `example_script.py` - Example Python utility script
 
 ## 📚 Citations
 Please cite the following works if you use this code:
@@ -85,7 +120,8 @@ Please cite the following works if you use this code:
 ├── notebooks/          # Jupyter notebooks for experiments or analysis
 ├── papers/             # manuscript sources (LaTeX, figures, assets)
 ├── data/               # raw/processed datasets or external links
-├── scripts/            # utility scripts and entry points
+├── scripts/            # bash/shell scripts for automation
+├── pyscripts/          # Python scripts and utilities
 ├── tests/              # unit and integration tests
 ├── docs/               # documentation (Sphinx, MkDocs, GitHub Pages)
 │   ├── index.html      # main documentation page
@@ -114,23 +150,33 @@ Ensure external links are functional and persistent.
 
 ### 📥 Data Download Utilities
 
-This repository includes a utility script for downloading datasets or models from the Hugging Face Hub:
+This repository includes utilities for downloading datasets:
 
-```python
+**Python Script (Hugging Face Hub):**
+```bash
 # Install required dependencies
 pip install huggingface_hub
 
 # Run the download script
-python data/download_hf_datasets.py
+python pyscripts/download_hf_datasets.py
 ```
 
-The script (`data/download_hf_datasets.py`) provides a robust way to fetch datasets with automatic retries and error handling. It uses the `huggingface_hub` library to download repositories with the following features:
+**Bash Script (General Data Download):**
+```bash
+# Download and process datasets
+./scripts/download_data.sh
 
-- Downloads datasets or models from Hugging Face Hub
+# Force re-download and verbose output
+./scripts/download_data.sh --force --verbose
+```
+
+The Python script (`pyscripts/download_hf_datasets.py`) provides a robust way to fetch datasets from Hugging Face Hub with automatic retries and error handling. The bash script (`scripts/download_data.sh`) handles general dataset downloads and preprocessing with the following features:
+
+- Downloads datasets from various sources
 - Configurable retry mechanism for handling network issues
 - Progress tracking and error reporting
-- Supports custom local directories for downloads
-- Uses HF's optimized transfer protocol
+- Data validation and preprocessing
+- Automatic directory organization
 
 To customize which datasets to download, edit the `repo_ids` list in the script.
 
