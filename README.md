@@ -11,7 +11,7 @@
 [![Documentation Status](https://img.shields.io/badge/docs-latest-green.svg)](https://github.com/ESA-PhiLab/Repo-Template/wiki)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15332053.svg)](https://doi.org/10.5281/zenodo.15332053)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 (For these shield to work, set proper name..)
 
@@ -103,7 +103,7 @@ The `docs/` directory contains the project's documentation website with comprehe
 
 
 ## 📄 License
-This project is licensed under the **CC BY-NC-ND 4.0** license. See the [LICENSE](./LICENSE) file or read more at [creativecommons.org](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](./LICENSE) file or read more at [apache.org](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## 📊 Dataset Hosting
 Datasets are either included in `data/` or hosted externally:
