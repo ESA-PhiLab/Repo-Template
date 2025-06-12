@@ -17,10 +17,21 @@
 
 
 <p align="right">
-<img src="./docs/images/banner.png" alt="ESA-PhiLab Logo" width="950" style='margin-bottom: 0em;'/>
+<img src="./docs/images/banner.png" alt="ESA-PhiLab Logo" width="100%" style='margin-bottom: 0em;'/>
 </p>
 
+<p align="center" style="font-size:1.5em;">
+    <strong>🌍 TRANSFORMING EARTH OBSERVATION IN ACTIONS FOR THE HUMAN PROSPERITY 🌍</strong>
+</p>
 
+<div align="center" style="font-size:1.2em;">
+
+[![Website](https://img.shields.io/badge/Website-philab.esa.int-blue?style=for-the-badge)](https://philab.esa.int)
+[![Twitter](https://img.shields.io/badge/Twitter-ESA_EO-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ESA_EO)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ESA_PhiLab-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/groups/8984375/)
+[![YouTube](https://img.shields.io/badge/YouTube-ESA-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCIBaDdAbGlFDeS33shmlD0A)
+
+</div>
 
 
 ## Repository Template
